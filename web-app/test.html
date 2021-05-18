@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+
+{% block content %}
+<p>Проверка числа на простоту Ферма.</p>
+<p>{{name}}</p>
+<p>Введите число и количество проверок.</p>
+
+<form action="/test" method="GET">
+    <input type="number" name="name_n" />
+    <input type="number" name="name_count">
+    <input type="submit" value="Get!">
+  </form>
+
+{% endblock %}
